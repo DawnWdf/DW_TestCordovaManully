@@ -47,8 +47,23 @@ module.exports = [
     "clobbers": [
       "device"
     ]
+  },
+  {
+    "id": "cordova-plugin-wkwebview-engine.ios-wkwebview-exec",
+    "file": "plugins/cordova-plugin-wkwebview-engine/src/www/ios/ios-wkwebview-exec.js",
+    "pluginId": "cordova-plugin-wkwebview-engine",
+    "clobbers": [
+      "cordova.exec"
+    ]
+  },
+  {
+    "id": "cordova-plugin-wkwebview-engine.ios-wkwebview",
+    "file": "plugins/cordova-plugin-wkwebview-engine/src/www/ios/ios-wkwebview.js",
+    "pluginId": "cordova-plugin-wkwebview-engine",
+    "clobbers": [
+      "window.WkWebView"
+    ]
   }
-                  
 ];
 module.exports.metadata = 
 // TOP OF METADATA
@@ -57,6 +72,7 @@ module.exports.metadata =
   "cordova-plugin-camera": "3.0.0",
   "cordova-plugin-battery-status": "1.2.5",
   "cordova-plugin-device": "1.1.7",
+  "cordova-plugin-wkwebview-engine": "1.1.4"
 };
 // BOTTOM OF METADATA
 });

@@ -3,7 +3,6 @@
     <head>
         <title>Hello World</title>
         <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-        <script type="text/javascript" charset="utf-8" src="cordova_plugins.js"></script>
         <script type="text/javascript" charset="utf-8">
             document.addEventListener("onBatteryStatus", onBatteryStatus, false);
             
@@ -16,16 +15,8 @@
         function onDevice() {
             console.log(device.cordova);
         }
-        function customTest() {
-            Cordova.exec(successFunction, failFunction, "customPluginTest", "customSelName", ["paramas"]);
-
-        }
-        function successFunction(){
-            alert("successFunction");
-        }
-        function failFunction(){
-            alert("failFunction");
-        }
+       
+       
         
         </script>
         <style type="text/css">
@@ -39,7 +30,7 @@
             <br/><button onclick="onDeviceReady()">onDeviceReady</button><br/>
             <br/><button onclick="onBatteryStatus()">onBatteryStatus</button><br/>
             <br/><button onclick="onDevice()">onDevice</button><br/>
-            <br/><button onclick="customTest()">custom</button><br/>
+
         </div>
         </div>
     </body>
